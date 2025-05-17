@@ -1,0 +1,67 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: lightpink;
+    color: #333;
+    padding: 2em;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #444;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #222;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Responsive navigation menu (AI-assisted) */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        font-size: 14px;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: lightpink;
+    }
+
+    #menu.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #eee;
+    margin-top: 2em;
+}
